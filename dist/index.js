@@ -871,6 +871,7 @@ module.exports = require("os");
 
 const fs = __webpack_require__(747);
 const { sendToDatadog } = __webpack_require__(676);
+const core = __webpack_require__(470);
 
 const run = async () => {
   const datadogLocation = core.getInput('datadog_url_location');
