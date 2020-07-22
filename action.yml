@@ -1,0 +1,12 @@
+name: 'DataDog Forwarder'
+description: 'Sends a specified json file to datadog.'
+inputs:
+  datadog_url_location:
+    description: 'eu or com depending on where your datadog endpoint is located (EU or US respectively). Required if no `send_to_dd` provided.'
+    required: true
+  filename:
+    description: 'The name of the file containing the json object'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
